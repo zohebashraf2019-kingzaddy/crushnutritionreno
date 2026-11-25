@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu | Crush Nutrition Reno: Shakes, Power Teas, Protein Donuts</title>
+<meta name="description" content="Full Crush Nutrition menu: 25+ protein shakes, 20+ sugar-free power teas, protein teas & coffee, combos, protein donuts, waffles and açaí bowls with prices and macros.">
+<meta name="theme-color" content="#ebe14c">
+<meta property="og:title" content="Menu | Crush Nutrition Reno: Shakes, Power Teas, Protein Donuts">
+<meta property="og:description" content="Full Crush Nutrition menu: 25+ protein shakes, 20+ sugar-free power teas, protein teas & coffee, combos, protein donuts, waffles and açaí bowls with prices and macros.">
+<meta property="og:image" content="/assets/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="has-mcta">
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce" hidden><span class="announce-text"></span></div>
+<header class="site-header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="index.html" aria-label="Crush Nutrition home"><img src="assets/img/crush-logo.png" alt="" width="54" height="54"><span>Crush<small>Nutrition · Reno</small></span></a>
+    <nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="menu.html" aria-current="page">Menu</a><a href="build.html">Crush Lab</a><a href="about.html">About</a><a href="contact.html">Contact & Jobs</a></nav>
+    <span class="status-pill" data-status>Hours</span>
+    <button class="bag-btn" type="button" aria-label="Open your order"><span aria-hidden="true">🥤</span><span class="lbl">Order</span><span data-bag-count hidden>0</span></button>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Step 1: pick your flavor · Step 2: pick your level</span>
+    <h1>The Menu</h1>
+    <p class="lead">Tap any flavor to open it in the Crush Lab, customize it, and see your price and macros live.</p>
+    <div class="btn-row"><a class="btn btn-ink" href="build.html">⚡ Open the Crush Lab</a><a class="btn" href="#boards">See the in-store boards</a></div>
+  </div>
+</section>
+<div class="menu-tools">
+  <div class="wrap">
+    <nav class="menu-jump" aria-label="Menu sections"><a href="#specials">🍂 Specials</a><a href="#shakes">Protein Shakes</a><a href="#teas">Power Teas</a><a href="#protein-teas">Protein Teas</a><a href="#coffee">Coffee & Immunity</a><a href="#combos">Combos</a><a href="#bites">Donuts & Waffles</a><a href="#acai">Açaí</a><a href="#boards">Boards</a></nav>
+    <label class="search"><span aria-hidden="true">🔎</span><span class="sr-only">Search flavors</span><input id="m-search" type="search" placeholder="Search flavors: peanut, mango, cheesecake..."></label>
+    <button class="fchip" type="button" data-filter="gf" aria-pressed="false">Gluten free</button>
+    <button class="fchip" type="button" data-filter="nopeanut" aria-pressed="false">No peanut</button>
+    <button class="fchip" type="button" data-filter="seasonal" aria-pressed="false">Seasonal</button>
+    <span id="m-count" aria-live="polite"></span>
+  </div>
+</div>
+<div id="menu-app">
+  <section class="menu-sec" id="specials"><div class="wrap">
+    <header><div><h2>November Specials</h2><p class="sub">Seasonal power teas and shakes, here for a limited time.</p></div><a class="btn btn-sm" href="assets/menu/november-specials.jpg" data-lightbox="November specials">View the board</a></header>
+    <div id="m-seasonal"></div>
+  </div></section>
+
+  <section class="menu-sec" id="shakes"><div class="wrap">
+    <header><div><h2>Protein Shakes</h2><p class="sub">Meal replacement or post workout. Every shake includes 26 vitamins & minerals.</p></div></header>
+    <div class="menu-split"><div id="m-shakes"></div><aside class="price-card"><h4>Pick your protein level</h4><div id="m-shake-prices"></div></aside></div>
+  </div></section>
+
+  <section class="menu-sec" id="teas"><div class="wrap">
+    <header><div><h2>Power Teas</h2><p class="sub">Sugar-free energy teas with B-vitamins & aloe. Every flavor comes caffeine-free for kids, too.</p></div></header>
+    <div class="menu-split"><div id="m-teas"></div><aside class="price-card"><h4>Pick your energy</h4><div id="m-tea-prices"></div></aside></div>
+  </div></section>
+
+  <section class="menu-sec" id="protein-teas"><div class="wrap">
+    <header><div><h2>Protein Teas</h2><p class="sub">70 cal · 15g protein · 3g carbs · 0g sugar. A tea that hits like a snack.</p></div></header>
+    <div class="menu-split"><div id="m-ptea"></div><aside class="price-card"><h4>Pick your energy</h4><div id="m-ptea-prices"></div></aside></div>
+  </div></section>
+
+  <section class="menu-sec" id="coffee"><div class="wrap">
+    <header><div><h2>Protein Coffee & Immunity</h2><p class="sub">Iced protein lattes with sugar-free flavors, plus shots and lemonades for when you need a boost.</p></div></header>
+    <div class="info-cards">
+      <div class="icard yel"><h3>Protein Coffee</h3><div class="price">$7.39</div><div class="macros">100 cal · 15g protein · 2g carbs · 80mg caffeine · 0g sugar</div><p>Mocha Latte or Caramel Latte base + up to 2 flavors: Peppermint, Salted Caramel, White Chocolate, Toffee, Hazelnut, Butter Rum.</p><a class="btn btn-sm btn-ink" href="build.html#coffee">Build a coffee</a></div>
+      <div class="icard orange"><h3>Immunity Shot</h3><div class="price">$4.50</div><div class="macros">Vitamin C & D, Echinacea, Epicor, Zinc</div><p>A quick defense shot for cold & flu season.</p><a class="btn btn-sm btn-ink" href="build.html#extras=immunity-shot">Add one</a></div>
+      <div class="icard teal"><h3>Super Greens Shot</h3><div class="price">$4.00</div><div class="macros">40 cal · 5g carbs · 1g protein</div><p>Organic fruits & veggies, spirulina, chlorella, moringa, barley grass, wheatgrass, turmeric & ashwagandha.</p><a class="btn btn-sm btn-ink" href="build.html#extras=greens-shot">Add one</a></div>
+      <div class="icard sky"><h3>Immunity Lemonade</h3><div class="price">$7.37 / $8.69</div><div class="macros">Caffeine free / caffeinated (85mg) · hot or cold</div><p>Vitamin C & D, Echinacea, Epicor, Zinc + Aloe Vera.</p><a class="btn btn-sm btn-ink" href="build.html#extras=immunity-lemonade-cf">Add one</a></div>
+    </div>
+  </div></section>
+
+  <section class="menu-sec" id="combos"><div class="wrap">
+    <header><div><h2>Combos: save big</h2><p class="sub">Any power tea + any protein shake. Add both to your order in the Crush Lab and the combo price is applied automatically.</p></div></header>
+    <div class="combo-grid">
+      <div class="combo"><h3><em class="blue-text">No Caffeine</em> combos <span class="badge">KIDS' FAVORITE</span></h3><div class="c-row"><span>16oz tea + 16oz shake</span><b>$8.39</b></div><div class="c-row"><span>16oz tea + 24oz shake</span><b>$10.14</b></div><p class="fine" style="color:var(--muted)">Upgrade the tea to 24 oz +$1</p></div>
+      <div class="combo"><h3><em style="color:#e88a1a">Level 1</em> combos</h3><div class="c-row"><span>24oz tea + 16oz shake</span><b>$12.25</b></div><div class="c-row"><span>24oz tea + 24oz shake <span class="badge">TOP RATED</span></span><b>$13.78</b></div></div>
+      <div class="combo"><h3><em style="color:#c9a800">Level 2</em> combos</h3><div class="c-row"><span>24oz tea + 16oz shake</span><b>$13.39</b></div><div class="c-row"><span>24oz tea + 24oz shake <span class="badge">MOST POPULAR</span></span><b>$14.49</b></div></div>
+      <div class="combo"><h3>Combo add-ons</h3><div class="c-row"><span>Upgrade tea or shake 24 → 32 oz</span><b>+$1</b></div><div class="c-row"><span>Extra Protein shake</span><b>+$2</b></div><div class="c-row"><span>Post Workout shake (24 oz)</span><b>+$3.50</b></div><div class="c-row"><span>Açaí bowl + any tea</span><b>−$1.50</b></div></div>
+    </div>
+  </div></section>
+
+  <section class="menu-sec" id="bites"><div class="wrap">
+    <header><div><h2>Donuts, Waffles & Snacks</h2><p class="sub">Choose a base, pick 3 toppings (included), add more for $0.50 each. Gluten-free option available.</p></div></header>
+    <div class="info-cards">
+      <div class="icard pink"><h3>Protein Donuts</h3><div class="price">$10.49</div><div class="macros">250 cal · 25g protein · 8g fat · 13g net carbs</div><p>Bases: Vanilla, Cookies & Cream, Chocolate, Banana, Caramel, Berry.</p><a class="btn btn-sm btn-ink" href="build.html#bites=donut">Build donuts</a></div>
+      <div class="icard yel"><h3>Protein Waffle</h3><div class="price">$12.79</div><div class="macros">330 cal · 31g protein · 10g fat · 13g net carbs</div><p>Toppings: strawberries, banana, Oreo, Heath, Butterfinger, drizzles, chips & sprinkles.</p><a class="btn btn-sm btn-ink" href="build.html#bites=waffle">Build a waffle</a></div>
+      <div class="icard sky"><h3>Grab & Go</h3><div class="price">$3.29+</div><div class="macros">Cake Pop Bites $3.29 · Protein Cookie Dough $8 · Protein Balls $8</div><p>Cookie dough packs 21g protein. Protein balls contain peanut.</p><a class="btn btn-sm btn-ink" href="build.html#extras=cookie-dough">Add a snack</a></div>
+    </div>
+  </div></section>
+
+  <section class="menu-sec" id="acai"><div class="wrap">
+    <header><div><h2>Açaí Bowls</h2><p class="sub">Healthy superfood. Pair any bowl with a tea and get $1.50 off.</p></div></header>
+    <div class="info-cards">
+      <div class="icard teal"><h3>Step 1: size</h3><div class="c-list"><p><b>Small</b> $9.59<br><b>Medium</b> $11.49<br><b>Large</b> $13.95</p></div></div>
+      <div class="icard"><h3>Step 2: base</h3><p>Açaí, Pitaya (dragonfruit), or both.</p></div>
+      <div class="icard pink"><h3>Step 3: toppings</h3><p>Strawberries, bananas, blueberries, granola, chocolate chips, honey or agave.</p><a class="btn btn-sm btn-ink" href="build.html#acai">Build a bowl</a></div>
+    </div>
+  </div></section>
+
+  <section class="menu-sec" id="boards" style="padding-bottom:100px"><div class="wrap">
+    <header><div><h2>In-store menu boards</h2><p class="sub">The same boards you'll see at the counter. Tap to zoom.</p></div></header>
+    <div class="boards">
+      <div><a href="assets/menu/shake-menu.jpg" data-lightbox="Shake menu"><img src="assets/menu/shake-menu.jpg" alt="Shake menu board" loading="lazy"></a><span>Shake menu</span></div>
+      <div><a href="assets/menu/energy-menu.jpg" data-lightbox="Energy menu"><img src="assets/menu/energy-menu.jpg" alt="Energy tea menu board" loading="lazy"></a><span>Energy menu</span></div>
+      <div><a href="assets/menu/combos.jpg" data-lightbox="Combos"><img src="assets/menu/combos.jpg" alt="Combos menu board" loading="lazy"></a><span>Combos & add-ons</span></div>
+      <div><a href="assets/menu/coffee-protein-teas.jpg" data-lightbox="Protein coffee and teas"><img src="assets/menu/coffee-protein-teas.jpg" alt="Protein coffee, protein teas and immunity menu board" loading="lazy"></a><span>Coffee, protein teas & immunity</span></div>
+      <div><a href="assets/menu/donuts-waffles-snacks.jpg" data-lightbox="Donuts waffles snacks"><img src="assets/menu/donuts-waffles-snacks.jpg" alt="Protein donuts, waffles and snacks menu board" loading="lazy"></a><span>Donuts, waffles & snacks</span></div>
+      <div><a href="assets/menu/acai-bowls.jpg" data-lightbox="Acai bowls"><img src="assets/menu/acai-bowls.jpg" alt="Acai bowls menu board" loading="lazy"></a><span>Açaí bowls</span></div>
+      <div><a href="assets/menu/november-specials.jpg" data-lightbox="November specials"><img src="assets/menu/november-specials.jpg" alt="November specials menu board" loading="lazy"></a><span>November specials</span></div>
+    </div>
+  </div></section>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-big">It's just a <span>Crush.</span></div>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/crush-logo.png" alt="Crush Nutrition logo" width="88" height="88">
+        <p>Family-owned protein shake & energy tea bar in South Reno. Low calorie, high protein, clean ingredients.</p>
+        <div class="socials"><a data-ig href="#" aria-label="Crush Nutrition on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://www.yelp.com/biz/crush-reno-2" target="_blank" rel="noopener" aria-label="Crush on Yelp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.6 2.2c-.3-.2-3.6.7-4.2 1.2-.3.3-.3.6-.2.9l3.4 6c.4.7 1.4.5 1.4-.3V2.9c0-.3-.1-.6-.4-.7zM10.9 14l-5.2 1.6c-.4.1-.6.5-.5.9.2 1.2.8 2.9 1.3 3.5.3.3.7.4 1 .2l4.3-3.6c.7-.6.1-1.7-.9-2.6zm1.4 1.7.1 5.4c0 .4.3.7.7.7 1.2-.1 3-.6 3.6-1.1.3-.2.3-.6.2-.9l-3-4.7c-.5-.7-1.6-.3-1.6.6zm.9-3.6 5.3-1.8c.4-.1.6-.6.4-1-.6-1.1-1.7-2.5-2.4-2.8-.3-.2-.7-.1-1 .2l-3.3 4.4c-.4.6.2 1.4 1 1zm.3 1.7 5.4 1.1c.4.1.8-.2.8-.6.1-1.2-.2-3-.6-3.6-.2-.3-.6-.4-.9-.3l-5 2c-.8.3-.6 1.3.3 1.4z"/></svg></a></div>
+      </div>
+      <div><h4>Visit</h4><ul><li>175 Damonte Ranch Pkwy, Ste D</li><li>Reno, NV 89521</li><li><a href="https://www.google.com/maps/dir/?api=1&destination=175+Damonte+Ranch+Pkwy+Ste+D,+Reno,+NV+89521" target="_blank" rel="noopener">Get directions →</a></li><li><a href="tel:+17753579477">775-357-9477</a></li></ul></div>
+      <div><h4>Hours</h4><ul class="hours foot-hours" data-regular-hours></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="menu.html">Full menu</a></li><li><a href="build.html">Crush Lab — build a drink</a></li><li><a href="about.html">Our story</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#jobs">Join the crew</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© <span data-year></span> Crush Nutrition · Reno, NV</span><span>Website by <a href="https://www.nexoradigital.live" target="_blank" rel="noopener">Nexora Digital</a></span></div>
+  </div>
+</footer>
+
+<div class="bag" aria-hidden="false">
+  <div class="bag-scrim" data-bag-close></div>
+  <aside class="bag-panel" role="dialog" aria-label="Your order">
+    <div class="bag-head"><h2>Your Order</h2><button type="button" data-bag-close aria-label="Close order">×</button></div>
+    <div class="bag-items"></div>
+    <div class="bag-foot">
+      <div class="bag-summary"></div>
+      <div class="bag-actions" hidden>
+        <p class="soon">📲 Online ordering is coming soon! For now, call it in and we'll have it ready.</p>
+        <a class="btn btn-yellow" href="tel:+17753579477">Call in this order</a>
+        <button class="btn" type="button" data-bag-copy>Copy order details</button>
+        <button class="clear" type="button" data-bag-clear>Clear order</button>
+      </div>
+    </div>
+  </aside>
+</div><div class="mobile-cta"><a class="btn btn-yellow" href="build.html">⚡ Build a drink</a><a class="btn btn-ink" href="tel:+17753579477">Call</a></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cup.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/menu.js"></script>
+</body>
+</html>
