@@ -9,6 +9,7 @@ Plain HTML / CSS / JS (no build step) + one Vercel serverless function for the c
 ```
 index.html      Home: animated hero cup, specials, power-tea benefits, reels, reviews, hours + map
 menu.html       Full menu rendered from data (search + GF / no-peanut / seasonal filters, combos, in-store boards)
+gallery.html    Masonry photo gallery with filters + swipeable lightbox
 build.html      Crush Lab: build-a-drink/bite with live cup, price, macros, caffeine; "take a sip"
 about.html      Story, owners' thank-you video, values, reviews
 contact.html    Contact form + "Join the crew" (Google Form) + map
@@ -32,7 +33,7 @@ assets/js/app.js      Nav, live open/closed status, order bag + automatic combo 
 - **Holiday hours / banner:** `hours.special` and `hours.announcement` in `data.js` (banner auto-hides after the `until` date).
 - **Prices:** `shakeSizes`, `teaLevels`, `proteinTeaLevels`, boosts, `comboTable` in `data.js`.
 - **Jobs form link:** `info.jobsForm` in `data.js`.
-- **Gallery:** add images to `assets/img/gallery/` (section to be added).
+- **Gallery:** drop `name.jpg` + `name-sm.jpg` into `assets/img/gallery/` and add a line to `CRUSH.gallery` at the bottom of `data.js` (`feature: true` puts it on the home page).
 
 ## Online ordering (next phase)
 The order bag already stores structured items (`kind`, `detail`, `price`, `combo`) in `localStorage` and computes combo savings.

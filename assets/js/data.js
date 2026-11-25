@@ -230,3 +230,23 @@ window.CRUSH = (function () {
     bakeBases, bakeToppings, acaiSizes, acaiBases, acaiToppings, extras, comboTable, hours, info,
   };
 })();
+
+/* ---------- GALLERY ----------
+   Add a photo: drop name.jpg + name-sm.jpg (≈640px wide) into assets/img/gallery/
+   and add a line here. cat: shakes | teas | combos | shop. w/h = original pixels. */
+window.CRUSH.gallery = [
+  { src: "elvis-shake-neon", cat: "shakes", title: "The Elvis under the neon", w: 750, h: 1000, feature: true },
+  { src: "crew-drinks", cat: "shop", title: "Peachy Peach Pineapple, a strawberry swirl & a fresh tea", w: 1000, h: 750, feature: true },
+  { src: "layered-power-tea", cat: "teas", title: "Sunset-layered power tea", w: 750, h: 1000, feature: true },
+  { src: "caramel-shake-blue-tea", cat: "combos", title: "Caramel drizzle shake + a deep blue power tea", w: 750, h: 1000, feature: true },
+  { src: "inside-crush", cat: "shop", title: "Pull up a stool at the bar", w: 1000, h: 750, feature: true },
+  { src: "strawberry-shake", cat: "shakes", title: "Strawberry swirl protein shake", w: 1000, h: 1000, feature: true },
+  { src: "chocolate-shake-orange-tea", cat: "combos", title: "Chocolate drizzle shake + an orange power tea", w: 750, h: 1000 },
+  { src: "red-power-teas", cat: "teas", title: "Double red power teas", w: 750, h: 1000 },
+  { src: "shakes-at-the-bar", cat: "shakes", title: "Bananas Foster & Chocolate Brownie", w: 750, h: 1000 },
+  { src: "teas-and-snacks", cat: "teas", title: "Two teas and protein snack cups", w: 750, h: 1000 },
+  { src: "tea-mocha-shake", cat: "combos", title: "The classic combo: tea + mocha-drizzle shake", w: 752, h: 1000 },
+  { src: "snow-day-crush", cat: "combos", title: "Snow day? Still a Crush day.", w: 750, h: 1000 },
+  { src: "tea-chocolate-shake", cat: "combos", title: "Tea + chocolate shake at the counter", w: 750, h: 1000 },
+  { src: "tea-and-shake-patio", cat: "combos", title: "Golden tea + a creamy shake by the window", w: 750, h: 1000 },
+];
