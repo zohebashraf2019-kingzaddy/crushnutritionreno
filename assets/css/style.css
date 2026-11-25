@@ -87,7 +87,7 @@ p { margin: 0 0 1em; }
 .nav-open .nav-toggle span { background: transparent; }
 .nav-open .nav-toggle span::before { top: 0; transform: rotate(45deg); }
 .nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .nav-toggle { display: grid; place-items: center; order: 3; }
   .nav-bar .status-pill { display: none; }
   .site-nav { position: fixed; inset: 0 0 0 auto; width: min(360px, 88vw); flex-direction: column; background: var(--yellow); border-left: var(--line); padding: 110px 26px 30px; transform: translateX(105%); transition: transform .35s cubic-bezier(.2, .8, .2, 1); z-index: -1; }
@@ -601,6 +601,15 @@ section { position: relative; }
   .g-filters::-webkit-scrollbar { display: none; }
   .g-filters button { flex: 0 0 auto; }
 }
-@media (max-width: 1200px) and (min-width: 961px) { .nav-bar .status-pill { display: none; } }
-.site-nav a { white-space: nowrap; }
-@media (max-width: 1200px) and (min-width: 961px) { .site-nav a { padding: 9px 10px; font-size: .8rem; } .nav-bar { gap: 14px; } .brand span small { display: none; } }
+
+/* ---- nav: never wrap, compact on small laptops ---- */
+.brand, .brand span, .brand span small, .site-nav a, .status-pill, .bag-btn { white-space: nowrap; }
+.brand { flex-shrink: 0; }
+.site-nav { align-items: center; flex-wrap: nowrap; }
+.site-nav a { line-height: 1; }
+@media (max-width: 1360px) and (min-width: 1101px) {
+  .nav-bar .status-pill { display: none; }
+  .nav-bar { gap: 14px; }
+  .site-nav a { padding: 10px 11px; font-size: .8rem; }
+}
+@media (max-width: 1100px) { .nav-bar { gap: 12px; } }
